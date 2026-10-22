@@ -1,0 +1,28 @@
+# Environment secrets — NEVER commit
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# ML model backups (keep only the canonical churn_model.pkl)
+ml/churn_model_*.pkl
+
+# Embedding cache (regenerated automatically)
+data/playbook_embeddings.*.pkl
+
+# Database (large binary, regenerated via load_dataset.py)
+churn_agent.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+NOTES.md
+docs/
